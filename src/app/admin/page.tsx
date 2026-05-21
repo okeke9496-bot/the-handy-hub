@@ -34,11 +34,15 @@ export default function AdminDashboard() {
         id: "ORD-92832",
         items: [],
         subtotal: 45.00,
-        shipping: 0.00,
+        shipping: { id: "free", name: "Free Shipping", description: "6-10 days", price: 0, estimatedDays: "6-10" },
         discount: 0.00,
         total: 48.60,
         status: 'shipped',
-        customerInfo: { firstName: "Robert", lastName: "Brown", email: "rob@example.com", address: "789 Pine Ln", city: "Seattle", state: "WA", zip: "98101" },
+        customerName: "Robert Brown",
+        customerEmail: "rob@example.com",
+        shippingAddress: { line1: "789 Pine Ln", city: "Seattle", state: "WA", zip: "98101", country: "US" },
+        createdAt: "2024-05-20T14:15:00Z"
+    }: { firstName: "Robert", lastName: "Brown", email: "rob@example.com", address: "789 Pine Ln", city: "Seattle", state: "WA", zip: "98101" },
         shippingOption: "Free",
         createdAt: "2024-05-20T14:15:00Z"
     }
