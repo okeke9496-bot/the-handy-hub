@@ -14,9 +14,9 @@ export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState("dashboard");
   
   // Mock Data
-  const [products, _setProducts] = useState<Product[]>(productsData as Product[]);
-  const [promos, _setPromos] = useState<PromoCode[]>(initialPromos);
-  const [orders, _setOrders] = useState<Order[]>([
+  const [products, setProducts] = useState<Product[]>(productsData as Product[]);
+  const [promos, setPromos] = useState<PromoCode[]>(initialPromos);
+  const [orders, setOrders] = useState<Order[]>([
     {
         id: "ORD-92831",
         items: [],
@@ -41,9 +41,6 @@ export default function AdminDashboard() {
         customerName: "Robert Brown",
         customerEmail: "rob@example.com",
         shippingAddress: { line1: "789 Pine Ln", city: "Seattle", state: "WA", zip: "98101", country: "US" },
-        createdAt: "2024-05-20T14:15:00Z"
-    }: { firstName: "Robert", lastName: "Brown", email: "rob@example.com", address: "789 Pine Ln", city: "Seattle", state: "WA", zip: "98101" },
-        shippingOption: "Free",
         createdAt: "2024-05-20T14:15:00Z"
     }
   ]);
@@ -314,8 +311,8 @@ export default function AdminDashboard() {
                                     <tr key={o.id} className="hover:bg-neutral/30 transition-colors cursor-pointer">
                                         <td className="p-6 font-bold text-sm text-primary">{o.id}</td>
                                         <td className="p-6">
-                                            <p className="font-bold text-sm">{o.customerInfo.firstName} {o.customerInfo.lastName}</p>
-                                            <p className="text-xs text-muted-foreground">{o.customerInfo.email}</p>
+                                            <p className="font-bold text-sm">{o.customerName.split(" ")[0]} {o.customerName.split(" ")[1]}</p>
+                                            <p className="text-xs text-muted-foreground">{o.customerEmail}</p>
                                         </td>
                                         <td className="p-6">
                                             <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest ${
