@@ -1,0 +1,127 @@
+[
+  {
+    "id": "prod_1",
+    "name": "Electric Gooseneck Kettle",
+    "description": "Precision pour kettle with temperature control, perfect for coffee and tea enthusiasts. Features a sleek design and fast heating.",
+    "price": 89.00,
+    "originalPrice": 119.00,
+    "images": ["/design/product-1-kettle.png"],
+    "category": "Kitchen",
+    "stock": 20,
+    "featured": true
+  },
+  {
+    "id": "prod_2",
+    "name": "Minimalist Table Lamp",
+    "description": "Sleek matte finish lamp with adjustable brightness and warm LED light. Perfect for bedside or office use.",
+    "price": 45.00,
+    "images": ["/design/product-2-lamp.png"],
+    "category": "Home Decor",
+    "stock": 15,
+    "featured": true
+  },
+  {
+    "id": "prod_3",
+    "name": "Ceramic Mugs Set",
+    "description": "Handcrafted ceramic mugs with a unique glaze, set of four. Durable and dishwasher safe.",
+    "price": 32.00,
+    "originalPrice": 40.00,
+    "images": ["/design/product-3-mugs.png"],
+    "category": "Kitchen",
+    "stock": 25,
+    "featured": true
+  },
+  {
+    "id": "prod_4",
+    "name": "Wooden Cutting Boards",
+    "description": "Durable acacia wood cutting boards in three versatile sizes. Easy to clean and gentle on knives.",
+    "price": 55.00,
+    "images": ["/design/product-4-cutting-boards.png"],
+    "category": "Kitchen",
+    "stock": 18,
+    "featured": true
+  },
+  {
+    "id": "prod_5",
+    "name": "Kitchen Utensils Set",
+    "description": "Heat-resistant silicone utensils with ergonomic wooden handles. Set of 10 essential tools.",
+    "price": 38.00,
+    "originalPrice": 45.00,
+    "images": ["/design/product-5-utensils.png"],
+    "category": "Kitchen",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": "prod_6",
+    "name": "Ceramic Planter",
+    "description": "Modern minimalist planter with a drainage hole and matching saucer. Ideal for succulents and indoor plants.",
+    "price": 24.00,
+    "images": ["/design/product-6-planter.png"],
+    "category": "Home Decor",
+    "stock": 40,
+    "featured": false
+  },
+  {
+    "id": "prod_7",
+    "name": "Glass Carafe",
+    "description": "Elegant glass carafe with a cork stopper, perfect for water, wine, or juice.",
+    "price": 28.00,
+    "images": ["/design/product-7-carafe.png"],
+    "category": "Kitchen",
+    "stock": 22,
+    "featured": false
+  },
+  {
+    "id": "prod_8",
+    "name": "Modern Wall Clock",
+    "description": "Silent movement wall clock with a clean, contemporary design. Large easy-to-read numbers.",
+    "price": 42.00,
+    "originalPrice": 60.00,
+    "images": ["/design/product-8-clock.png"],
+    "category": "Home Decor",
+    "stock": 12,
+    "featured": false
+  },
+  {
+    "id": "prod_9",
+    "name": "Cotton Towels Set",
+    "description": "Ultra-soft and absorbent 100% organic cotton towels, set of six (2 bath, 2 hand, 2 face).",
+    "price": 60.00,
+    "images": ["/design/product-9-towels.png"],
+    "category": "Bathroom",
+    "stock": 50,
+    "featured": false
+  },
+  {
+    "id": "prod_10",
+    "name": "Desk Organizer",
+    "description": "Minimalist desk organizer to keep your workspace tidy and efficient. Features multiple compartments.",
+    "price": 25.00,
+    "originalPrice": 35.00,
+    "images": ["/design/product-10-organizer.png"],
+    "category": "Office",
+    "stock": 35,
+    "featured": false
+  },
+  {
+    "id": "prod_11",
+    "name": "Scented Candle Set",
+    "description": "Natural soy wax candles with soothing essential oils. Set of three relaxing scents.",
+    "price": 18.00,
+    "images": ["/design/product-6-planter.png"],
+    "category": "Home Decor",
+    "stock": 45,
+    "featured": false
+  },
+  {
+    "id": "prod_12",
+    "name": "Bamboo Bath Mat",
+    "description": "Eco-friendly bamboo mat, water-resistant and non-slip. Adds a spa-like feel to your bathroom.",
+    "price": 35.00,
+    "images": ["/design/product-9-towels.png"],
+    "category": "Bathroom",
+    "stock": 20,
+    "featured": false
+  }
+]

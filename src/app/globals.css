@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #333333;
+  --radius: 8px;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-6 py-2 rounded-sm font-medium transition-colors hover:bg-opacity-90;
+  }
+  .btn-secondary {
+    @apply bg-transparent border-2 border-secondary text-secondary px-6 py-2 rounded-sm font-medium transition-colors hover:bg-secondary hover:text-white;
+  }
+  .product-card {
+    @apply bg-white rounded-lg p-4 shadow-[0px_4px_12px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-lg;
+  }
+}
