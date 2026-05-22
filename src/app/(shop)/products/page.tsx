@@ -17,11 +17,6 @@ export default function ProductsPage() {
   }, []);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
-  const categories = useMemo(() => {
-    const cats = new Set((productsData as Product[]).map((p) => p.category));
-    return ["All", ...Array.from(cats)];
-  }, []);
-
   const filteredProducts = useMemo(() => {
     let result = productsData as Product[];
 
