@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect } from "react";
 import productsData from "@/data/products.json";
 import ProductCard from "@/components/product/ProductCard";
 import { Product } from "@/lib/types";
-import { Search, ChevronDown, X } from "lucide-react";
+import { Search, ChevronDown, SlidersHorizontal, X } from "lucide-react";
 
 export default function ProductsPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -47,10 +47,10 @@ export default function ProductsPage() {
 
   const updateCategory = (cat: string) => {
     setSelectedCategory(cat);
-    const params = new URLSearchParams(searchParams.toString());
+    const params = new URLSearchParams(window.location.search);
     if (cat === "All") params.delete("category");
     else params.set("category", cat);
-    router.push(`/products?${params.toString()}`);
+    window.history.replaceState(null, "", `/products?${params.toString()}`);
   };
 
   return (
