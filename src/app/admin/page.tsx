@@ -366,8 +366,8 @@ export default function AdminDashboard() {
                                 </div>
                                 <h3 className="text-2xl font-heading font-bold text-secondary mb-2">{p.code}</h3>
                                 <p className="text-sm font-medium mb-6">
-                                    {p.discountType === 'percentage' ? `${p.value}% OFF` : `${formatPrice(p.value)} OFF`}
-                                    {p.minSpend && <span className="text-muted-foreground block text-xs mt-1 italic">Min spend: {formatPrice(p.minSpend)}</span>}
+                                    {p.discountPercent}% OFF
+                                    {p.minPurchase > 0 && <span className="text-muted-foreground block text-xs mt-1 italic">Min spend: ${p.minPurchase}</span>}
                                 </p>
                                 <button 
                                     onClick={() => togglePromo(p.code)}

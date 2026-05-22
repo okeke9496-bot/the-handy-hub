@@ -1,20 +1,20 @@
 "use client";
 
-import { useState, useMemo } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
+import { useState, useMemo, useEffect } from "react";
 import productsData from "@/data/products.json";
 import ProductCard from "@/components/product/ProductCard";
 import { Product } from "@/lib/types";
-import { Search, ChevronDown, SlidersHorizontal, X } from "lucide-react";
+import { Search, ChevronDown, X } from "lucide-react";
 
 export default function ProductsPage() {
-  const searchParams = useSearchParams();
-  const router = useRouter();
-  const initialCategory = searchParams.get("category");
-
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState(initialCategory || "All");
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const [sortBy, setSortBy] = useState("featured");
+
+  const categories = useMemo(() => {
+    const cats = new Set((productsData as Product[]).map((p) => p.category));
+    return ["All", ...Array.from(cats)];
+  }, []);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const categories = useMemo(() => {
@@ -200,3 +200,4 @@ export default function ProductsPage() {
     </div>
   );
 }
+
